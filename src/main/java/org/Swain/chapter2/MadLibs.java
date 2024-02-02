@@ -11,7 +11,7 @@ minimum of [whole number] cups of cofee"
 */
 public class MadLibs {
 
-    public static void main (String arg[]){
+    public static void main (String args[]){
 
         Scanner scanner = new Scanner(System.in);
 
