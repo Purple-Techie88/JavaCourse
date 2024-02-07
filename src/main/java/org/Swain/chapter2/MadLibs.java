@@ -13,21 +13,21 @@ public class MadLibs {
 
     public static void main(String args[]) {
 
-        Scanner scanner = new Scanner(System.in);
+        try (Scanner scanner = new Scanner(System.in)) {
 
-        System.out.println("Enter a season of the year:");
-        String season = scanner.next();
+            System.out.println("Enter a season of the year:");
+            String season = scanner.next();
 
-        System.out.println("Enter an adjective:");
-        String adjective = scanner.next();
+            System.out.println("Enter an adjective:");
+            String adjective = scanner.next();
 
-        System.out.println("Enter a whole number:");
-        int number = scanner.nextInt();
-        scanner.close();
+            System.out.println("Enter a whole number:");
+            int number = scanner.nextInt();
 
-        System.out.println("On a " + adjective + " " + season + " day, I drink a \n"
-                + //
-                "minimum of " + number + " cups of coffee.");
+            System.out.println("On a " + adjective + " " + season + " day, I drink a \n"
+                    + //
+                    "minimum of " + number + " cups of coffee.");
 
+        }
     }
 }

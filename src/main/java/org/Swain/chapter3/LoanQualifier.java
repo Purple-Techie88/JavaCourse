@@ -16,23 +16,25 @@ public class LoanQualifier {
 
         //Get what we don't 
         System.out.println("Enter your salary:");
-        Scanner scanner = new Scanner(System.in);
-        double salary = scanner.nextDouble();
+        try (Scanner scanner = new Scanner(System.in)) {
+            double salary = scanner.nextDouble();
 
-        System.out.println("Enter the number of years with your current employer:");
-        double years = scanner.nextDouble();
-        scanner.close();
-        //Make decision
-        if (salary >= requiredSalary) {
-            if (years >= requiredYearsEmployed) {
-                System.out.println("Congrats! You qualify for the loan!");
+            System.out.println("Enter the number of years with your current employer:");
+            double years = scanner.nextDouble();
+
+            //Make decision
+            if (salary >= requiredSalary) {
+                if (years >= requiredYearsEmployed) {
+                    System.out.println("Congrats! You qualify for the loan!");
+                } else {
+                    System.out.println("Sorry, you must have worked at your current job "
+                            + requiredYearsEmployed + " years.");
+                }
             } else {
-                System.out.println("Sorry, you must have worked at your current job "
-                        + requiredYearsEmployed + " years.");
+                System.out.println("Sorry, you must earn at least $" + requiredSalary
+                        + " to qualify for the loan");
             }
-        } else {
-            System.out.println("Sorry, you must earn at least $" + requiredSalary
-                    + " to qualify for the loan");
         }
     }
+
 }

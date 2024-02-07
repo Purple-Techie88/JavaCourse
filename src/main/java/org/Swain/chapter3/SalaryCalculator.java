@@ -18,18 +18,18 @@ public class SalaryCalculator {
 
         //Get values for the unkown
         System.out.println("How many sales did the employee make this week?");
-        Scanner scanner = new Scanner(System.in);
+        try (Scanner scanner = new Scanner(System.in)) {
 
-        int sales = scanner.nextInt();
-        scanner.close();
+            int sales = scanner.nextInt();
 
-        //Quick detour for the bonus earners
-        if (sales > salesQuota) {
-            salary = salary + bonus;
+            //Quick detour for the bonus earners
+            if (sales > salesQuota) {
+                salary = salary + bonus;
+            }
+
+            //Output
+            System.out.print("The employees pay is $" + salary);
         }
 
-        //Output
-        System.out.print("The employees pay is $" + salary);
     }
-
 }
