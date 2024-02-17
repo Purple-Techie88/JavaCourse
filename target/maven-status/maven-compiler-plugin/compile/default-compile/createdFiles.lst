@@ -1,5 +1,9 @@
 org/swain/chapter3/ChangeForADollar.class
-org/swain/chapter4/GrossPayInputValidation.class
 org/swain/chapter3/LogicalOperatorLoanQualifier.class
+org/swain/chapter4/AddNumbers.class
 org/swain/chapter3/TestResults.class
+org/swain/chapter4/Cashier.class
+org/swain/chapter4/LetterSearch.class
+org/swain/chapter4/GrossPayInputValidation.class
+org/swain/chapter4/AverageTestScores.class
 org/swain/chapter3/GradeMessage.class

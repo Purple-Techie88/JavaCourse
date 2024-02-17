@@ -12,7 +12,6 @@ public class GrossPayInputValidation {
  * for each employee, and calculate their pay.
  * Do not allow for overtime
      */
-
     public static void main(String args[]) {
 
         //initiallize what we know
