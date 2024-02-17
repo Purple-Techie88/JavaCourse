@@ -1,4 +1,4 @@
-package org.Swain.chapter4;
+package org.swain.chapter4;
 
 import java.util.Scanner;
 
@@ -20,8 +20,9 @@ public class AverageTestScores {
                 double score = scanner.nextDouble();
                 total = total +score;
             }
-double average = total/numberOfTests;
-System.out.println("The test average for student #" + (i+1) + " is " + average);
+            
+        double average = total/numberOfTests;
+        System.out.println("The test average for student #" + (i+1) + " is " + average);
         }
     }
     }

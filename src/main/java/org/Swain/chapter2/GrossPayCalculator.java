@@ -1,4 +1,4 @@
-package org.Swain.chapter2;
+package org.swain.chapter2;
 
 import java.util.Scanner;
 
